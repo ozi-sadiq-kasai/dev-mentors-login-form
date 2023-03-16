@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(./images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+
+}
+main{
+  width: 900px;
+  height:500px;
+  display: flex;
+  align-items: center;
+}
+.section-left{
+  color: white;
+  width: 100%;
+  max-width: 450px;
+  padding:0 10px;
+}
+.section-left h1{
+line-height: 1.1;
+margin-bottom: 24px;
+width: 300px;
+font-size: 2em;
+font-weight: 700;
+}
+.section-left p{
+  width: 100%;
+  list-style: 1.1;
+  font-size: small;
+  font-weight: 400;
+}
+
+
+/* right section */
+.section-right{
+  width: 450px; 
+  padding: 0 10px;
+}
+.trial{
+  width: 100%;
+  padding: 13px;
+  border-radius: 5px;
+  border: none;
+  background: hsl(248, 32%, 49%);
+  box-shadow: -2px 4px 6px 0px rgba(0,0,0,0.45);
+  margin-bottom: 10px;
+  color: white;
+}
+.trial span{
+  font-weight: 700;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px 15px 30px 15px;
+  box-shadow: 0px 2px 6px 0px rgba(112,102,102,0.75);
+}
+form input,.submit{
+  margin-bottom: 15px;
+  padding: 12px 0 15px 10px;
+  border-radius: 3px;
+  border: 1px solid hsl(246, 25%, 77%);
+  font-weight: 700;
+}
+form input:focus{
+  outline: none;
+}
+.submit{
+  background: hsl(154, 59%, 51%);
+  color: white;
+  border: 1px solid hsl(154, 50%, 42%);
+  border-radius: 3px;
+  box-shadow: -2px 3px 5px -2px rgba(15,94,21,0.75);
+  cursor: pointer;
+}
+.submit p{
+  font-weight: 700;
+}
+.submit:active{
+  filter: brightness(1.2);
+}
+.terms{
+  font-size: 0.5em;
+  align-self: center;
+  color: hsl(246, 25%, 77%);
+  font-weight: 400;
+}
+.terms span{
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 375px) {
+  main{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction:column;
+    overflow-x: hidden;
+  }
+  .section-left{
+    color: white;
+    width: 100%;
+    max-width: 375px;
+    padding:0 10px;
+  }
+  .section-right{
+    width: 100%; 
+    padding: 0 10px;
+  }
+  .section-left h1{
+    line-height: 1.1;
+    margin: 10px auto;
+    width: 50%;
+    font-size: 1.3em;
+    }
+    .section-left p{
+      width: 100%;
+      margin-bottom: 10px;
+ 
+    }
+  
+}
